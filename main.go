@@ -48,7 +48,7 @@ func revIP(ip string) {
 	ptr, _ := net.LookupAddr(ip)
 	ptrs := ""
 	for _, v := range ptr {
-		ptrs += "," + v
+		ptrs += " " + v
 	}
 	fmt.Printf("%s%s\n", ip, ptrs)
 }
